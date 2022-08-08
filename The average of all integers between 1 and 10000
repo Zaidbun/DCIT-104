@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	   int n = 10000,count = 0;
+   float sum = 0;
+   for (int i = 1; i <= n; i++) {
+      if(i%2 == 0) {
+         sum = sum + i;
+         count++;
+      }
+   }
+   float average = sum/count;
+   printf("The average of even numbers till %d is %f",n, average);
+	return 0;
+}
